@@ -1,0 +1,21 @@
+{% load static %}
+<aside class="aside">
+    <h3><span>Most</span> popular</h3>
+    <ul class="aside-list">
+        {% for post in posts %}
+        <li>
+            <a href="{{ post.get_absolute_url }}">
+                {% if post.photo %}
+                <img src="{{ post.photo.url }}" alt="">
+                {% else %}
+                <img src="{% static 'img/No_image.png' %}" alt="">
+                {% endif %}
+                <div class="aside-list_info">
+                    <p class="number">{{ forloop.counter }}</p>
+                    <h4>{{ post.title }}</h4>
+                </div>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</aside>

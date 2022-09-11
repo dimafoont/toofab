@@ -1,0 +1,44 @@
+{% load static %}
+{% load left_menu %}
+{% load right_menu %}
+<footer>
+    <div class="footer-container">
+        <div class="footer-container_main">
+            <div class="navbar-left">
+                <ul class="menu-left">
+                    {% show_left_menu %}
+                </ul>
+            </div>
+            <a class="logo" href="{% url 'home' %}">
+                <img src="{% static 'img/toofab-logo-white.svg' %}" alt="">
+            </a>
+            <div class="navbar-right">
+                <ul class="menu-right">
+                    {% show_right_menu %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>© 2022 EHM Productions, Inc. All rights reserved. Reproduction in whole or in part without permission is
+            prohibited.</p>
+        <strong>In partnership with <a href="https://www.tmz.com/" class="wb footer-tmz js-track-link" target="_blank"
+                                       data-context="{&quot;section&quot;:&quot;footer-copyright&quot;,&quot;name&quot;:&quot;tmz&quot;,&quot;pos&quot;:1}">TMZ</a></strong>
+        |
+        <a href="https://www.tmz.com/privacy" class="footer-wb js-track-link" rel="noopener" target="_blank"
+           data-context="{&quot;section&quot;:&quot;footer-copyright&quot;,&quot;name&quot;:&quot;privacy-policy&quot;,&quot;pos&quot;:2}">Privacy
+            Policy (New)</a> |
+        <a href="https://www.tmz.com/terms" class="footer-wb js-track-link" rel="noopener" target="_blank"
+           data-context="{&quot;section&quot;:&quot;footer-copyright&quot;,&quot;name&quot;:&quot;terms-of-use&quot;,&quot;pos&quot;:3}">Terms
+            of Use (New)</a> |
+        <a href="https://www.tmz.com/privacy" class="footer-wb js-track-link" rel="noopener" target="_blank"
+           data-context="{&quot;section&quot;:&quot;footer-copyright&quot;,&quot;name&quot;:&quot;ad-choices&quot;,&quot;pos&quot;:4}">Ad
+            Choices</a> |
+        <a class="footer-wb js-track-link" style="cursor: pointer" href="/pages/do-not-sell/"
+           data-context="{&quot;section&quot;:&quot;footer-copyright&quot;,&quot;name&quot;:&quot;cookie-settings&quot;,&quot;pos&quot;:5}">Cookie
+            Settings</a>
+        |
+        <a href="https://www.linkedin.com/careersite/tmz" class="footer-wb js-track-link" rel="noopener" target="_blank"
+           data-context="{&quot;section&quot;:&quot;footer-copyright&quot;,&quot;name&quot;:&quot;careers&quot;,&quot;pos&quot;:6}">Careers</a>
+    </div>
+</footer>

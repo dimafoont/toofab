@@ -1,0 +1,6 @@
+<section class="main-tags">
+    <h3>Hot now <i class="bi bi-chevron-down"></i></h3>
+    {% for tag in tags %}
+    <a href="{{ tag.get_absolute_url }}">{{ tag.title }}</a>
+    {% endfor %}
+</section>
